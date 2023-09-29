@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b;
+	    cin>>a>>b;
+	    int x=0,y=0;
+	    for(int i=1 ; ; i++){
+	       if(i%2!=0){
+	           x=x+i;
+	           if(x>a){
+	               cout<<"Bob"<<endl;
+	               break;
+	           }
+	       }
+	       else{
+	           y=y+i;
+	           if(y>b){
+	               cout<<"Limak"<<endl;
+	               break;
+	           }
+	       }
+	       
+	    }
+	    
+	}
+	return 0;
+}
